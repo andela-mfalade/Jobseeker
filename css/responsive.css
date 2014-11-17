@@ -1,0 +1,403 @@
+/* ====================MEDIA QUERIES=================== *\
+\* ==================================================== */
+
+
+
+@media screen and (max-width:660px) {
+
+/* ==================HEADER STYLING=================== *\
+\* =================================================== */
+
+	header {
+		display: block;
+		height:3.5em;
+	}
+
+	header img {
+		height: 2.5em;
+		width: 4em;
+		float: left;
+		position: relative;
+		top: 0.8em;
+		left: 5%;
+	}
+
+	header ul {
+		float: right;
+		padding: 2em 1.5em;
+		font-size: 0.65em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+/* ==================MAIN SECTION STYLING=================== *\
+\* ========================================================= */
+
+	.main_section {
+		background-size: contain;
+	}
+
+
+	.intro_text {
+		position: relative;
+		margin-left: 10%;
+		padding-bottom: 5%;
+	}
+
+	.intro_text p, .third_section p {
+		font-size: 0.9rem;
+	}
+
+	.intro_text h1, .third_section h1 {
+		margin-bottom: 0;
+		font-size: 23px;
+		margin-top: -0.5em	;
+	}	
+
+	.sub_section {
+		display: none;
+	}
+
+	.sub_section p {
+		display: block;
+		padding: 0.5em 0;
+		font-size: 0.8em;
+		letter-spacing: 0.01em;
+	}
+
+	.sub_section h1 {
+		font-size: 20px;
+	}
+
+	.sub_section p:nth-child(3)::before, 
+	.sub_section p:nth-child(3)::after {
+		content: '';
+		padding: 0;
+	}
+
+	a[class] {
+		color: #fff;
+		background-color: #208a0b;
+		padding: 0.4em 1.5em;
+		position: relative;
+		top: 5px;
+	}
+
+	.second_section ul li img {
+		height: 30%;
+		width: 70%;
+		margin-top: 1.5em;
+	}
+
+	.second_section p {
+		margin-top: 1em;
+		font-size: 0.7em;
+		color: #777777;
+		line-height: 1.0em;
+	}
+
+	.third_section {
+		padding: 2em 1em;
+	}
+
+	.partners{
+		padding: 2%;
+	}
+
+	#parners_logos img {
+		width: 3em;
+		height:3em;
+		margin: -0.8em;
+		padding: 1em 0;
+		border:  none;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer ul {
+		padding: 2em 1em;
+		font-size: 0.7em;
+	}
+
+
+}
+
+
+@media screen and (min-width:480px) and (max-width:677px) {
+
+/* ==================HEADER STYLING=================== *\
+\* =================================================== */
+
+	header {
+		display: block;
+		height:3.5em;
+	}
+
+	header img {
+		height: 2.5em;
+		width: 4em;
+		float: left;
+		position: relative;
+		top: 0.8em;
+		left: 5%;
+	}
+
+	header ul {
+		float: right;
+		padding: 1em 1.5em;
+		font-size: 0.8em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+/* ==================MAIN SECTION STYLING=================== *\
+\* ========================================================= */
+
+	.main_section {
+		background-size: contain;
+	}
+
+
+	.intro_text {
+		position: relative;
+		margin-left: 10%;
+		padding-bottom: 5%;
+	}
+
+	.intro_text p, .third_section p {
+		font-size: 0.9rem;
+		margin: 10px;
+	}
+
+	.intro_text h1, .third_section h1 {
+		margin-bottom: 0;
+		font-size: 23px;
+		margin-top: -0.5em	;
+	}	
+
+	.sub_section {
+		display: none;
+	}
+
+	.sub_section p {
+		display: block;
+		padding: 0.5em 0;
+		font-size: 0.8em;
+		letter-spacing: 0.01em;
+	}
+
+	.sub_section h1 {
+		font-size: 20px;
+	}
+
+	.sub_section p:nth-child(3)::before, 
+	.sub_section p:nth-child(3)::after {
+		content: '';
+		padding: 0;
+	}
+
+	a[class] {
+		color: #fff;
+		background-color: #208a0b;
+		padding: 0.4em 1.5em;
+		position: relative;
+		top: 5px;
+	}
+
+	.second_section ul li img {
+		height: 30%;
+		width: 70%;
+		margin-top: 1.5em;
+	}
+
+	.third_section {
+		padding: 2em 1em;
+	}
+
+	.partners{
+		padding: 2%;
+	}
+
+	#parners_logos img {
+		width: 3em;
+		height:3em;
+		margin: -0.8em;
+		padding: 1em 0;
+		border:  none;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer ul {
+		padding: 2em 1em;
+		font-size: 0.7em;
+	}
+
+}
+
+@media screen and (max-width:980px) {
+
+/* ==================MAIN SECTION STYLING=================== *\
+\* ========================================================= */
+
+.main_section {
+	background-size: contain;
+}
+
+}
+
+
+/*This because at within min-width 550px and max-width: 660px the background image starts to show a dark space by the right side*/
+
+@media screen and (min-width:550px) {
+	.main_section {
+		background-size: cover;
+	}
+
+}
+
+
+/*This because within min-width [least width] and max-width: 550px the background image starts to show a dark space by the bottom. *\
+\* I added a 100% height so that the short image will grow tall enough to fill the whole bg and cver the said dark space..         */
+
+@media screen and (max-width: 550px) {
+
+	.main_section {
+		background-size: cover;
+		background-size: 100% 100%;
+	}
+
+}
+
+
+
+@media screen and (min-width: 660px) and (max-width: 1024px) {
+
+/* ==================MAIN SECTION STYLING=================== *\
+\* ========================================================= */
+
+	header img {
+		width: 8em;
+		float: left;
+		position: relative;
+		top: 0.8em;
+		left: 30%;
+	}
+
+	header ul {
+		float: right;
+		padding: 1em 2em;
+		font-size: 0.9em;
+	}
+
+	.sub_section {
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	.sub_section p:nth-child(3)::before, 
+	.sub_section p:nth-child(3)::after {
+		content: '.';
+		font-size: 2em;
+		font-weight: bolder;
+		padding: 0 0.8em;
+	}
+
+	.second_section ul li img {
+		height: 30%;
+		width: 70%;
+		margin-top: 1.5em;
+	}
+
+	.third_section {
+		padding: 2em 1em;
+	}
+
+	.partners{
+		padding: 2%;
+	}
+
+	#parners_logos img {
+		width: 3em;
+		height:3em;
+		margin: -0.8em;
+		padding: 1.2em 2.5em;
+	}
+
+}
+
+
+
+@media screen and (max-width:350px) {
+
+/* ==================HEADER STYLING=================== *\
+\* =================================================== */
+
+
+	header ul {
+		display: none;
+	}
+
+	#menu {
+		display: block;
+		float: right;
+	}
+
+	.intro_text p:nth-child(-n+5),
+	.intro_text h1,
+	.second_section ul li:nth-child(2n),
+	.third_section p:nth-child(3),
+	.partners ul li:nth-child(3),
+	footer li:nth-child(2n+1) {
+		display: none;
+	}
+
+	.third_section p {
+	font-size: 0.7rem;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+	}
+
+	.third_section h1 {
+		font-size: 1.2em;
+	}
+
+	.intro_text {
+		padding: 20% 0;
+		position: relative;
+	}
+
+	.second_section ul {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		height: 250px;
+		width: 70%;
+		text-align: center;
+	}
+
+	.second_section ul li {		
+		width: 100%;
+		height: 40%;
+	}
+
+	.second_section ul li img {
+		width:22%;
+		margin-bottom: -10px;
+	}
+	
+
+}

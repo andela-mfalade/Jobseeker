@@ -1,0 +1,268 @@
+/* ==================GENERAL STYLING=================== *\
+\* ==================================================== */
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		max-width: 100%;
+		height: auto;
+		background: #242424;
+		font-family:  kalinga, "open sans", arial;
+	}
+
+	header ul, ul {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		list-style: none;
+	}
+
+	.sub_section, 
+	.third_section, 
+	.second_section, 
+	.partners, 
+	.parners_logos, 
+	footer ul {
+		text-align: center;
+	}
+
+	ul {
+		
+	}
+
+	#menu {
+		display: none;
+	}
+
+	a {
+		text-decoration: none;
+		-webkit-transition: color ease .3s;
+		-moz-transition: color ease .3s;
+		-o-transition: color ease .3s;
+		transition: color ease .3s;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 2em;
+		color: #777777;
+	}
+
+	p {
+		font-family: "open sans", arial;
+	}
+
+/* ==================HEADER STYLING=================== *\
+\* =================================================== */
+
+	header {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;		
+		-webkit-justify-content: space-between;
+		-moz-justify-content: space-between;
+		-o-justify-content: space-between;
+		justify-content: space-between;
+		background-color: #ffffff;
+		opacity: 0.75;
+		height:3.5em;
+	}
+
+	header img {
+		width: 65%;
+		position: relative;
+		top: 1.65em;
+		left: 50%;
+	}
+
+	header ul {
+		-webkit-justify-content: flex-end;
+		-moz-justify-content: space-between;
+		-o-justify-content: space-between;
+		justify-content: space-between;
+		padding: 1em 5em;
+	}
+
+	header ul li {
+		padding-left: 2em;
+		display: inline; /*Firefox display*/
+	}
+ 
+	header ul li a {
+		color: rgba(0,0,0,1);
+		font-weight: bold;
+		line-height: 1.8em;
+	}
+
+	header ul li a:hover {
+		color: #208a0b;
+	}
+
+
+/* ==================MAIN SECTION STYLING=================== *\
+\* ========================================================= */
+
+	.main_section {
+		background: url('../images/top_bg.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.first_section {
+		margin-top: 10%;
+	}
+
+
+
+	.intro_text {
+		position: relative;
+		margin-left: 15%;
+		padding-bottom: 5%;
+	}
+
+	.intro_text p, .third_section p {
+		line-height: 1.8rem;
+		font-size: 1.2rem;
+		letter-spacing: 0.005em;
+		color: #474747;
+	}
+
+	.intro_text h1, .third_section h1 {
+		margin-bottom: 0.5em;
+		font-size: 35px;
+		font-weight: 700;
+	}	
+
+	.sub_section {
+		background: #000000;
+		color: #fff;
+		opacity: 0.65;
+		padding: 1.5em;
+		margin-top: 6%;
+	}
+
+	.sub_section p {
+		display: inline-block;
+		padding: 1em 0;
+		font: 1.2em;
+		letter-spacing: 0.01em;
+	}
+
+	.sub_section p:nth-child(3)::before, 
+	.sub_section p:nth-child(3)::after {
+		content: '.';
+		font-size: 2em;
+		font-weight: bolder;
+		padding: 0 1.2em;
+	}
+
+	a[class] {
+		color: #fff;
+		background-color: #208a0b;
+		padding: 0.5em 2.5em;
+		position: relative;
+		top: 20px;
+	}
+	a[class]:hover {
+		background-color: #24970D;
+	}
+
+
+/* ==================SECOND SECTION STYLING=================== *\
+\* =========================================================== */
+
+	.second_section, .partners {
+		padding: 4%;
+		background-color: #fff;
+	}
+
+	.second_section ul, .partners ul {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		-moz-justify-content: space-between;
+		-o-justify-content: space-between;
+		justify-content: space-between;
+		margin: 3% auto;
+		width: 85%;
+	}
+
+	.second_section ul li {
+		-webkit-flex-direction:  column!important;
+	}
+
+	.second_section p {
+		margin-top: 1em;
+		font-size: 1.2em;
+		color: #777777;
+		line-height: 1.1em;
+	}
+
+
+/* ==================THIRD SECTION STYLING=================== *\
+\* ========================================================== */
+
+	.third_section {
+		background: url('../images/blurred_bg.jpg') no-repeat center center;
+		background-size: cover;
+		padding: 5%;
+	}
+
+	.third_section p {	
+		color: #050505;
+	}
+
+
+/* ==================PARTNERS SECTION STYLING=================== *\
+\* ============================================================= */
+
+	#parners_logos {
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-o-box-orient: horizontal;
+		box-orient: horizontal;
+	}
+	
+	#parners_logos img {
+		width: 6em;
+		height: 6em;
+		margin: 1.2em;
+		border: 2px solid #F3F3F3;
+		padding: 1em 3em;
+	}
+
+
+
+/* ==================FOOTER STYLING=================== *\
+\* =================================================== */
+
+	footer {
+		height: 4.5em;
+		background-color: #333333;
+		border-top: 3px solid #208a0b;
+	}
+
+	footer ul {
+		padding: 2em 4em 0;
+	}
+
+	footer ul li{
+		display: inline-block;
+	}
+
+	footer a {
+		color: #fff;
+		padding: 0.6em;
+		font-size: 12px;	
+	}
+
+	footer a:hover {
+		color: #208a0b;
+	}
