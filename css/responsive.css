@@ -77,7 +77,7 @@
 		padding: 0;
 	}
 
-	a[class] {
+	a[class="botton"] {
 		color: #fff;
 		background-color: #208a0b;
 		padding: 0.4em 1.5em;
@@ -202,7 +202,7 @@
 		padding: 0;
 	}
 
-	a[class] {
+	a[class="botton"] {
 		color: #fff;
 		background-color: #208a0b;
 		padding: 0.4em 1.5em;
@@ -373,7 +373,7 @@
 /* ==================HEADER STYLING=================== *\
 \* =================================================== */
 
-	a[class] {
+	a[class="botton"] {
 		font-size: small;
 	}
 

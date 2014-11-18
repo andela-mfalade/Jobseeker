@@ -168,14 +168,14 @@
 		padding: 0 1.2em;
 	}
 
-	a[class] {
+	a[class="botton"] {
 		color: #fff;
 		background-color: #208a0b;
 		padding: 0.5em 2.5em;
 		position: relative;
 		top: 20px;
 	}
-	a[class]:hover {
+	a[class="botton"]:hover {
 		background-color: #24970D;
 	}
 
