@@ -77,8 +77,8 @@
 	header img {
 		width: 65%;
 		position: relative;
-		top: 1.65em;
-		left: 50%;
+		top: 1.46em;
+		left: 35%;
 	}
 
 	header ul {
@@ -121,7 +121,7 @@
 
 	.intro_text {
 		position: relative;
-		margin-left: 15%;
+		margin-left: 12%;
 		padding-bottom: 5%;
 	}
 
